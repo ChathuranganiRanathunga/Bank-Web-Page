@@ -80,3 +80,10 @@ nav .logo img {
     align-items: center;
     padding-left: 3px;
 }
+
+
+/*Footer*/
+
+footer hr.solid {
+    border-top: 3px solid #bbb;
+}
