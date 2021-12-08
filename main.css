@@ -15,3 +15,41 @@ html {
 /* font-family: 'Lora', serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace; */
+
+
+/*navbar*/
+
+nav .logo img {
+    width: 40%;
+}
+
+
+/*Section-01*/
+
+.section-01 .main-section {
+    background-image: url(./Images/Main_Image.svg);
+    height: 570px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+}
+
+
+/*Section-02*/
+
+.section-02 .scrollable-section02 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.section-02 .scrollable-section02::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*Section-03*/
+
+.Section-03 {
+    background-color: rgba(229, 229, 229, 0.5);
+}
