@@ -60,3 +60,23 @@ nav .logo img {
 .Section-06 {
     background-color: rgba(229, 229, 229, 0.5);
 }
+
+
+/*Section-07*/
+
+.section-07 .scrollable-section07 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.section-07 .scrollable-section07::-webkit-scrollbar {
+    display: none;
+}
+
+.section-07 .vl {
+    border-right: 2px solid rgb(147, 147, 147);
+    height: 60px;
+    align-items: center;
+    padding-left: 3px;
+}
