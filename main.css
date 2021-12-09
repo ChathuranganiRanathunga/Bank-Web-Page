@@ -212,6 +212,9 @@ footer .footer-social-icons a i {
         background-repeat: no-repeat;
         background-position: relative;
     }
+    .section-01 .input-group {
+        margin: 20em 0.5em 0.5em 11em;
+    }
 }
 
 
@@ -224,6 +227,10 @@ footer .footer-social-icons a i {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: relative;
+    }
+    .section-01 .input-group {
+        width: 55%;
+        margin: 7em 0.5em 0.5em 0em;
     }
     footer h4 {
         text-align: center !important;
