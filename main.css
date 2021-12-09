@@ -170,3 +170,67 @@ nav .logo img {
 footer hr.solid {
     border-top: 3px solid #bbb;
 }
+
+footer h4 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+footer p {
+    color: white;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p i {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer .footer-social-icons {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-social-icons a {
+    text-decoration: none;
+    color: white;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+footer .footer-social-icons a i {
+    padding-right: 20px;
+}
+
+
+/*For large Screens*/
+
+@media only screen and (min-width: 768px) {}
+
+
+/*For Small Screens*/
+
+@media only screen and (max-width: 768px) {
+    footer h4 {
+        text-align: center !important;
+    }
+    footer .left-container {
+        padding-left: 50px;
+    }
+    footer .middle-one-container {
+        padding-left: 50px;
+    }
+    footer .middle-two-container {
+        padding-left: 50px;
+    }
+    footer .right-container {
+        padding-left: 50px;
+    }
+}
