@@ -34,6 +34,66 @@ nav .logo img {
     background-position: relative;
 }
 
+.social-media {
+    position: fixed;
+    top: 10%;
+    right: 0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    transform: translate(+200px, 0)
+}
+
+.social-media a {
+    background: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin: 0em 0 0.5em 0.5em;
+    padding: 0.6em;
+    width: 250px;
+    text-align: left;
+    border-radius: 50px;
+    transition: 1s;
+    transition-property: transform;
+}
+
+.social-media a:hover {
+    transform: translate(-140px, 0);
+}
+
+.social-media i {
+    margin-left: 0.25em;
+    margin-right: 0.5em;
+    font-size: 1.5em;
+}
+
+.social-media a:nth-child(1) i {
+    color: rgb(50, 18, 244);
+}
+
+.social-media a:nth-child(2) i {
+    color: rgb(75, 180, 255);
+}
+
+.social-media a:nth-child(3) i {
+    color: rgb(60, 75, 206);
+}
+
+.social-media a:nth-child(4) i {
+    color: rgb(255, 24, 24);
+}
+
+.social-media a:nth-child(5) i {
+    color: transparent;
+    background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+
 
 /*Section-02*/
 
