@@ -26,14 +26,6 @@ nav .logo img {
 
 /*Section-01*/
 
-.section-01 .main-section {
-    background-image: url(./Images/Main_Image.svg);
-    height: 570px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: relative;
-}
-
 .social-media {
     position: fixed;
     top: 5%;
@@ -212,12 +204,27 @@ footer .footer-social-icons a i {
 
 /*For large Screens*/
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .section-01 .main-section {
+        background-image: url(./Images/Main_Image.svg);
+        height: 570px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: relative;
+    }
+}
 
 
 /*For Small Screens*/
 
 @media only screen and (max-width: 768px) {
+    .section-01 .main-section {
+        background-image: url(./Images/Main_Image.svg);
+        height: 180px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: relative;
+    }
     footer h4 {
         text-align: center !important;
     }
