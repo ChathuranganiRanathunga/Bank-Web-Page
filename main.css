@@ -130,6 +130,14 @@ nav .logo img {
 }
 
 
+/*Section-04*/
+
+.Section-04 .card {
+    border-style: none;
+    font-size: 0.7em;
+}
+
+
 /*Section-06*/
 
 .Section-06 {
@@ -215,6 +223,17 @@ footer .footer-social-icons a i {
     .section-01 .input-group {
         margin: 20em 0.5em 0.5em 11em;
     }
+    .Section-03 .section03_DetailCard {
+        height: 250px;
+        width: 400px;
+        cursor: pointer;
+        transform: translateX(+130px);
+        margin-top: 5em;
+    }
+    .Section-05 .mapouter .gmap_canvas iframe {
+        width: 600px;
+        height: 500px;
+    }
 }
 
 
@@ -246,5 +265,9 @@ footer .footer-social-icons a i {
     }
     footer .right-container {
         padding-left: 50px;
+    }
+    .Section-05 .mapouter .gmap_canvas iframe {
+        width: 350px;
+        height: 320px;
     }
 }
