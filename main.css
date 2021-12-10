@@ -247,6 +247,19 @@ footer .footer-social-icons a i {
         width: 55%;
         margin: 7em 0.5em 0.5em 0em;
     }
+    .Section-03 img {
+        width: 90%;
+        padding-left: 20px;
+    }
+    .Section-03 .container-fluid .section03_DetailCard {
+        padding-left: 20px;
+        justify-content: center;
+    }
+    .Section-04 .card {
+        border-style: none;
+        font-size: 0.7em;
+        width: 70%;
+    }
     footer h4 {
         text-align: center !important;
     }
