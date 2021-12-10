@@ -230,6 +230,9 @@ footer .footer-social-icons a i {
         width: 600px;
         height: 500px;
     }
+    .Section-06 .latest-news-card .card-title {
+        margin-top: 12em;
+    }
 }
 
 
