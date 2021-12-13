@@ -363,9 +363,9 @@ footer .footer-social-icons a i {
         transform: translateX(+130px);
         margin-top: 5em;
     }
-    .Section-05 .mapouter .gmap_canvas iframe {
-        width: 600px;
-        height: 500px;
+    .Section-03 video {
+        width: 600;
+        height: 500;
     }
     .Section-06 .latest-news-card .card-title {
         margin-top: 12em;

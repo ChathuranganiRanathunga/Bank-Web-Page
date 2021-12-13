@@ -93,7 +93,7 @@
     <!--large Screens-->
     <section class="main-header d-none d-lg-flex">
         <div class="container-fluid d-flex justify-content-between" style="background-color: black;">
-            <div class="header-bar row col-9 d-flex justify-content-between" style="color:white;">
+            <div class="header-bar row col-9 d-flex justify-content-between ps-2" style="color:white;">
                 <div class="bar-item col pt-3">
                     <p><a href="#">Personal</a></p>
                 </div>
@@ -127,19 +127,13 @@
                     <button type="button" class="btn btn-secondary" style="background-color: rgb(164,18,18);"></button>
                 </div>
 
-                <div class="Changed-fs col d-flex justify-content-center">
+                <div class="Changed-fs col d-flex justify-content-center pe-5">
                     <div class="buttons d-flex">
                         <span class="btn active" onclick="document.getElementById('text').style.fontSize = '1em'">A</span>
                         <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.2em'">A</span>
                         <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.6em'">A</span>
                     </div>
                 </div>
-
-                <!-- <div class="Resize col btn-group" role="group" aria-label="Basic example" style="height:40px;">
-                    <button type="button" class="btn btn-secondary" style="background-color:black; font-size: 0.7em;">A</button>
-                    <button type="button" class="btn btn-secondary" style="background-color: black; font-size:0.9em;">A</button>
-                    <button type="button" class="btn btn-secondary" style="background-color: black; font-size:1em;">A</button>
-                </div> -->
             </div>
         </div>
     </section>
@@ -267,12 +261,12 @@
 
 
         <!--Section-03-->
-
-        <Section class="Section-03 mb-3 mt-5">
+        <!--For large Screens-->
+        <Section class="Section-03 mb-3 mt-5 d-none d-lg-block">
             <div class="container-fluid justify-content-center">
                 <div class="row align-items-center">
                     <div class="col-xl-5 col-lg-5 col-md-6">
-                        <div class="section03_DetailCard card mt-4" style="width:85%;">
+                        <div class="section03_DetailCard card mt-4" style="width:85%; z-index:1;">
                             <div class="card-body">
                                 <h5 class="card-title mt-3 mb-2">Saving for your family in an ethical way</h5>
                                 <p class="card-text pt-3">
@@ -281,8 +275,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-lg-7 col-md-6">
-                        <img src="./Images/Section03_right_img.svg" alt="Working Man" style="margin-top:2em; margin-bottom:2em;">
+                    <div class="col-xl-7 col-lg-7 col-md-6 mb-4">
+                        <video width="600" height="500" controls>
+                            <source src="./Videos/workingPeople.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+        <!--For small Screens-->
+        <Section class="Section-03 mb-3 mt-5 d-md-block d-lg-none">
+            <div class="container-fluid justify-content-center">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <div class="section03_DetailCard card mt-4 mb-2 ms-4" style="width:85%; z-index:1;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mt-3 mb-2">Saving for your family in an ethical way</h5>
+                                <p class="card-text pt-3">
+                                    AI Rayan Bank helps its customers to own their own homes, save for their families’ futures and expanded their businesses without compromising their-faith or their values. This is Neli’s story.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-6 mb-4 ms-2">
+                        <video width="350" height="200" controls>
+                            <source src="./Videos/workingPeople.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
