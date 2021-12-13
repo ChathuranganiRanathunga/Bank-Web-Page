@@ -9,6 +9,7 @@ html {
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
+    box-sizing: border-box;
 }
 
 
@@ -149,6 +150,9 @@ font-family: 'Roboto Mono', monospace; */
     font-weight: 500;
 }
 
+
+/*--------------------Main-header----------------------*/
+
 .main-header .color-code button {
     border-style: none;
     height: 30px;
@@ -162,6 +166,40 @@ font-family: 'Roboto Mono', monospace; */
 .main-header p a {
     text-decoration: none !important;
     color: white;
+}
+
+.main-header .Changed-fs {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header .Changed-fs .buttons {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 2px;
+}
+
+.main-header .Changed-fs .buttons .btn {
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0 10px;
+    background-color: rgb(92, 92, 92);
+}
+
+.main-header .Changed-fs .buttons .btn.active {
+    background: rgb(243, 243, 243);
+    color: red;
+}
+
+.main-header .Changed-fs .buttons .btn:nth-child(2) {
+    font-size: 1.2em;
+}
+
+.main-header .Changed-fs .buttons .btn:nth-child(3) {
+    font-size: 1.6em;
 }
 
 
