@@ -216,34 +216,6 @@ font-family: 'Roboto Mono', monospace; */
 }
 
 
-/*Section-02*/
-
-.section-02 .carousel {
-    background: #EEE;
-}
-
-.section-02 .carousel-cell {
-    width: 66%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    border-radius: 5px;
-    counter-increment: gallery-cell;
-}
-
-
-/* cell number */
-
-.section-02 .carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-}
-
-
 /* .section-02 #browser {
     float: left;
     width: 200px;
@@ -423,6 +395,45 @@ footer .footer-social-icons a i {
     .Section-06 .latest-news-card .card-title {
         margin-top: 12em;
     }
+    /*Section-02*/
+    .section-02 .carousel {
+        text-align: center;
+        align-items: center;
+    }
+    .section-02 .carousel-cell {
+        width: 20%;
+        height: 120px;
+        margin-right: 10px;
+        background: rgb(243, 243, 243);
+        border-radius: 5px;
+    }
+    /* cell number */
+    .section-02 .carousel-cell:before {
+        display: block;
+        text-align: center;
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+    }
+    /*Section-07*/
+    .section-07 .carousel {
+        text-align: center;
+    }
+    .section-07 .carousel-cell {
+        width: 50%;
+        height: 120px;
+        margin-right: 10px;
+        background: rgb(243, 243, 243);
+        border-radius: 5px;
+    }
+    /* cell number */
+    .section-07 .carousel-cell:before {
+        display: block;
+        text-align: center;
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+    }
 }
 
 
@@ -439,6 +450,25 @@ footer .footer-social-icons a i {
     .section-01 .input-group {
         width: 55%;
         margin: 7em 0.5em 0.5em 0em;
+    }
+    /*Section-02*/
+    .section-02 .carousel {
+        text-align: center;
+    }
+    .section-02 .carousel-cell {
+        width: 50%;
+        height: 120px;
+        margin-right: 10px;
+        background: rgb(243, 243, 243);
+        border-radius: 5px;
+    }
+    /* cell number */
+    .section-02 .carousel-cell:before {
+        display: block;
+        text-align: center;
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
     }
     .Section-03 img {
         width: 90%;
@@ -471,5 +501,24 @@ footer .footer-social-icons a i {
     .Section-05 .mapouter .gmap_canvas iframe {
         width: 350px;
         height: 320px;
+    }
+    /*Section-07*/
+    .section-07 .carousel {
+        text-align: center;
+    }
+    .section-07 .carousel-cell {
+        width: 50%;
+        height: 120px;
+        margin-right: 10px;
+        background: rgb(243, 243, 243);
+        border-radius: 5px;
+    }
+    /* cell number */
+    .section-07 .carousel-cell:before {
+        display: block;
+        text-align: center;
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
     }
 }
