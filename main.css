@@ -3,6 +3,19 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
@@ -366,6 +379,10 @@ footer .footer-social-icons a i {
     .Section-03 video {
         width: 600;
         height: 500;
+    }
+    .Section-05 .mapouter .gmap_canvas iframe {
+        width: 600px;
+        height: 500px;
     }
     .Section-06 .latest-news-card .card-title {
         margin-top: 12em;
