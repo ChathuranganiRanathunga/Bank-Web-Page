@@ -33,48 +33,52 @@ font-family: 'Roboto Mono', monospace; */
 
 /*navbar*/
 
-.navbar .search-box {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    background: #bbb;
-}
-
-.navbar .search-box:hover>.navbar .search-text {
-    width: 240px;
-    padding: 0 6px;
-}
-
-.navbar .search-btn {
-    color: black;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgb(255, 24, 24);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar .search-text {
-    border: none;
-    outline: none;
-    background: none;
-    float: left;
-    padding: 0;
-    color: black;
-    font-size: 0.8em;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
-}
-
 .navbar .btn-group .btn-secondary:hover,
 .navbar .btn-group .btn-secondary:focus {
     background-color: rgb(230, 20, 20);
+}
+
+.navbar .searchbar {
+    position: relative;
+}
+
+.navbar .searchbar input[type="text"] {
+    border: 0;
+    padding: 0 10px;
+    width: 0px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.navbar .searchbar .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    width: 35px;
+    height: 35px;
+    color: white !important;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.navbar .searchbar .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.navbar .searchbar .icon.active {
+    background: #bbb;
+    transition: all 0.3s ease;
+}
+
+.navbar .searchbar input[type="text"].active {
+    width: 220px !important;
+    padding: 0 10px;
+    transition: all 0.5s 0.2s ease;
 }
 
 
@@ -84,7 +88,7 @@ font-family: 'Roboto Mono', monospace; */
     position: fixed;
     top: 5%;
     right: 0%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

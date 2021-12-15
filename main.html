@@ -17,6 +17,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        //for left and right scrolling buttons
+
+        $('#right-button').click(function() {
+            event.preventDefault();
+            $('#content').animate({
+                marginLeft: "-=200px"
+            }, "fast");
+        });
+
+        //For search bar 
+        $(document).ready(function() {
+            $(".fa-search").click(function() {
+                $(".icon").toggleClass("active");
+                $("input[type='text']").toggleClass("active");
+            })
+        });
+    </script>
     <title>DFCC</title>
 </head>
 
@@ -46,6 +64,7 @@
                     <li class="nav-item text-center">
                         <a href="#" class="nav-link">Media</a>
                     </li>
+
                     <li class="nav-item  text-center d-none d-md-inline">
                         <button type="button" class="btn ms-2 me-2" style="border-radius:100%; background-color:rgb(237,29,36); color:white; border-width:2px;  border-color:rgb(243, 243, 243);">E</button>
                     </li>
@@ -53,20 +72,14 @@
                         <button type="button" class="btn ms-2 me-2" style="border-radius:100%; background-color:white; border-width:2px; border-style:solid; border-color:rgb(243, 243, 243);">S</button>
                     </li>
                     <li class="nav-item   text-center d-none d-md-inline">
-                        <button type="button" class="btn ms-2 me-2" style="border-radius:100%; background-color:white; border-width:2px; border-style:solid; border-color:rgb(243, 243, 243);">T</button>
+                        <button type="button" class="btn ms-2 me-3" style="border-radius:100%; background-color:white; border-width:2px; border-style:solid; border-color:rgb(243, 243, 243);">T</button>
                     </li>
-                    <li class="nav-item d-none d-md-inline text-center">
-                        <!-- <a href="">
-                            <div class="search-box">
-                                <input class="search-text" type="text" name="" placeholder="Type to Search">
-                                <a href="#" class="search-btn">
-                                    <i class="fas fa-search"></i>
-                                </a>
+                    <li>
+                        <div class="searchbar me-2 ms-2">
+                            <input type="text" placeholder="Search">
+                            <div class="icon"><i class="fas fa-search"></i></div>
 
-                            </div>
-                        </a> -->
-                        <!-- <a href=""><i class="fa fa-search" style="font-size:2em; margin:0.2em 1em 0 2em; color:rgb(147,147,147);"></i></a> -->
-
+                        </div>
                     </li>
 
                     <li class="nav-item  text-center">
@@ -130,7 +143,7 @@
 
                 <div class="Changed-fs col d-flex justify-content-center pe-5">
                     <div class="buttons d-flex">
-                        <span class="btn active" onclick="document.getElementById('text').style.fontSize = '1em'">A</span>
+                        <span class="btn" onclick="document.getElementById('text').style.fontSize = '1em'">A</span>
                         <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.2em'">A</span>
                         <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.6em'">A</span>
                     </div>
@@ -170,10 +183,12 @@
                             </li>
                             <li>
                                 <a href="#" class="dropdown-item">
-                                    <div class="Resize col btn-group" role="group" aria-label="Basic example" style="height:40px;">
-                                        <button type="button" class="btn btn-secondary" style="background-color:black; font-size: 0.7em;">A</button>
-                                        <button type="button" class="btn btn-secondary" style="background-color: black; font-size:0.9em;">A</button>
-                                        <button type="button" class="btn btn-secondary" style="background-color: black; font-size:1em;">A</button>
+                                    <div class="Changed-fs col d-flex justify-content-center pe-5">
+                                        <div class="buttons d-flex">
+                                            <span class="btn" onclick="document.getElementById('text').style.fontSize = '1em'">A</span>
+                                            <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.2em'">A</span>
+                                            <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.6em'">A</span>
+                                        </div>
                                     </div>
                                 </a>
                             </li>
@@ -249,45 +264,6 @@
                 </div>
 
             </div>
-
-            <!-- <div class="scrollable-section02 float-start container-fluid text-center">
-                <a href="#" id="left-button"><i class="fas fa-chevron-left"></i></a>
-                <div class="content row flex-row flex-nowrap text-center">
-                    <div class="cols">
-                        <i class="fa fa-lock"></i>
-                        <h6>Online Banking</h6>
-                    </div>
-                    <div class="cols">
-                        <i class="fa fa-map-marker"></i>
-                        <h6>Locate Us</h6>
-                    </div>
-                    <div class="cols">
-                        <i class="fa fa-user"></i>
-                        <h6>Become a Customer</h6>
-                    </div>
-                    <div class="cols">
-                        <i class="fa fa-key"></i>
-                        <h6>Accounts</h6>
-                    </div>
-                    <div class="cols">
-                        <i class="fa fa-usd"></i>
-                        <h6>Loans & Advance</h6>
-                    </div>
-                    <div class="cols">
-                        <i class="fa fa-check"></i>
-                        <h6>Complains</h6>
-                    </div>
-                    <div class="cols">
-                        <i class="fa fa-lock"></i>
-                        <h6>Online Banking</h6>
-                    </div>
-                    <div class="cols">
-                        <i class="fa fa-lock"></i>
-                        <h6>Online Banking</h6>
-                    </div>
-                </div>
-                <a href="#" id="right-button"><i class="fas fa-chevron-right"></i></a>
-            </div> -->
         </Section>
 
 
@@ -340,8 +316,8 @@
 
         <!--Section-04-->
         <Section class="Section-04 mt-5">
-            <div class="row col-md-12 justify-content-center pb-5 mb-5">
-                <div class="col-md-4">
+            <div class="row col-md-12 justify-content-center pb-5">
+                <div class="col-md-4 p-0">
                     <div class="card col-md-8 justify-content-center mx-auto">
                         <img class="card-img-top" src="./Images/sec_04_01.png" alt="Card image cap" style="">
                         <div class="card-body text-center">
@@ -350,7 +326,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                     <div class="card col-md-8 justify-content-center mx-auto">
                         <img class="card-img-top" src="./Images/sec_04_02.png" alt="Card image cap" style="">
                         <div class="card-body text-center">
@@ -359,7 +335,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                     <div class="card col-md-8 justify-content-center mx-auto">
                         <img class="card-img-top" src="./Images/se_04_03.png" alt="Card image cap" style="">
                         <div class="card-body text-center">
@@ -371,7 +347,7 @@
             </div>
 
             <div class="row col-md-12 justify-content-center pb-5 mb-5">
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                     <div class="card col-md-8 justify-content-center mx-auto">
                         <img class="card-img-top" src="./Images/sec_04_04.png" alt="Card image cap" style="">
                         <div class="card-body text-center">
@@ -380,7 +356,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                     <div class="card col-md-8 justify-content-center mx-auto">
                         <img class="card-img-top" src="./Images/Sec_04_05.png" alt="Card image cap" style="">
                         <div class="card-body text-center">
@@ -389,7 +365,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                     <div class="card col-md-8 justify-content-center mx-auto">
                         <img class="card-img-top" src="./Images/Sec_04_06.png" alt="Card image cap" style="">
                         <div class="card-body text-center">
@@ -662,7 +638,7 @@
                 </div>
                 <hr class="solid">
             </div>
-            <p class="text-center text-muted">Copyright <i class="fa fa-copyright"></i> 2021 Amana Bank PLC is a Licensed Commercial Bank approved and supervised by he Central Bank of Sri OLanka | Fitch Rating : BB+(lka) Stable Outlook (PB 3618 PQ)</p>
+            <p class="text-center text-muted mb-0">Copyright <i class="fa fa-copyright"></i> 2021 Amana Bank PLC is a Licensed Commercial Bank approved and supervised by he Central Bank of Sri OLanka | Fitch Rating : BB+(lka) Stable Outlook (PB 3618 PQ)</p>
         </footer>
 
     </div>
@@ -679,15 +655,6 @@
                 this.className += " active";
             })
         }
-
-        //for left and right scrolling buttons
-
-        $('#right-button').click(function() {
-            event.preventDefault();
-            $('#content').animate({
-                marginLeft: "-=200px"
-            }, "fast");
-        });
     </script>
 
 </body>
