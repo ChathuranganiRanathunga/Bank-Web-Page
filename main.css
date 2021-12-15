@@ -275,50 +275,6 @@ font-family: 'Roboto Mono', monospace; */
 }
 
 
-/*Section-07*/
-
-.section-07 .scrollable-section07 {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.section-07 .scrollable-section07::-webkit-scrollbar {
-    display: none;
-}
-
-.section-07 .vl {
-    align-items: center;
-    padding-left: 3px;
-}
-
-.section-07-Small .scrollable-section07-Small .row .cols>.row {
-    overflow-x: auto;
-}
-
-.section-07-Small .scrollable-section07-Small .cols {
-    width: 60vw;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    max-height: 100vh;
-    text-align: center;
-}
-
-.section-07-Small .scrollable-section07-Small .row {
-    -ms-overflow-style: none;
-    /* for Internet Explorer, Edge */
-    scrollbar-width: none;
-    /* for Firefox */
-    overflow-y: scroll;
-}
-
-.section-07-Small .scrollable-section07-Small .row::-webkit-scrollbar {
-    display: none;
-    /* for Chrome, Safari, and Opera */
-}
-
-
 /*Footer*/
 
 footer hr.solid {
@@ -420,7 +376,7 @@ footer .footer-social-icons a i {
         text-align: center;
     }
     .section-07 .carousel-cell {
-        width: 50%;
+        width: 20%;
         height: 120px;
         margin-right: 10px;
         background: rgb(243, 243, 243);
