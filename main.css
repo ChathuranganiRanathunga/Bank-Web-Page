@@ -244,6 +244,10 @@ font-family: 'Roboto Mono', monospace; */
     font-size: 0.7em;
 }
 
+.Section-04 .card .card-body p {
+    font-size: 1.3em;
+}
+
 
 /*Section-06*/
 
