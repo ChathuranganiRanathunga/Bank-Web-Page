@@ -348,7 +348,12 @@ footer .footer-social-icons a i {
         height: 500px;
     }
     .Section-06 .latest-news-card .card-title {
-        margin-top: 12em;
+        margin-top: 1em;
+    }
+    .Section-06 .latest-news-card .card-body p {
+        font-size: 0.8em;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
     }
     /*Section-02*/
     .section-02 .carousel {
