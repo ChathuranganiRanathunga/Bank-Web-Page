@@ -388,6 +388,9 @@ footer .footer-social-icons a i {
         margin-right: 10px;
         border-radius: 5px;
     }
+    .section-07 .carousel-cell:hover {
+        background-color: rgb(243, 243, 243);
+    }
     /* cell number */
     .section-07 .carousel-cell:before {
         display: block;
