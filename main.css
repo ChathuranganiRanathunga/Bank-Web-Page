@@ -48,7 +48,7 @@ font-family: 'Roboto Mono', monospace; */
     width: 0px;
     height: 35px;
     border-radius: 10px;
-    margin-top: 4px;
+    /* margin-top: 4px; */
 }
 
 .navbar .searchbar .icon {
@@ -61,7 +61,7 @@ font-family: 'Roboto Mono', monospace; */
     color: white !important;
     height: 35px;
     border-radius: 10px;
-    margin-top: 4px;
+    /* margin-top: 4px; */
 }
 
 .navbar .searchbar .icon i {
@@ -205,11 +205,9 @@ font-family: 'Roboto Mono', monospace; */
     cursor: pointer;
     display: inline-flex;
     padding: 0 10px;
-    background-color: rgb(92, 92, 92);
 }
 
 .main-header .Changed-fs .buttons .btn.active {
-    background: rgb(243, 243, 243);
     color: red;
 }
 
@@ -222,40 +220,13 @@ font-family: 'Roboto Mono', monospace; */
 }
 
 
-/* .section-02 #browser {
-    float: left;
-    width: 200px;
-    overflow: hidden;
-    white-space: nowrap;
-} */
-
-
-/* .section-02 .scrollable-section02>.row {
-    overflow-x: auto;
-}
-
-.section-02 .scrollable-section02 .cols {
-    width: 30vw;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    max-height: 60vh;
-    text-align: center;
-} */
-
-
-/* .section-02 .scrollable-section02 .row {
-    -ms-overflow-style: none;
-    /* for Internet Explorer, Edge 
-    scrollbar-width: none;
-    /* for Firefox 
-    overflow-y: scroll;
-} */
-
-
-/* .section-02 .scrollable-section02 .row::-webkit-scrollbar {
-    display: none;
-    /* for Chrome, Safari, and Opera 
+/* .main-header ul li {
+    padding-right: 10%;
+    width: auto;
+    margin-right: 0.5%;
+    background: #fafafa;
+    padding-left: 0;
+    margin-left: 0;
 } */
 
 
@@ -366,8 +337,11 @@ footer .footer-social-icons a i {
         width: 20%;
         height: 120px;
         margin-right: 10px;
-        background: rgb(243, 243, 243);
         border-radius: 5px;
+    }
+    .section-02 .carousel-cell i:hover,
+    .section-02 .carousel-cell h6:hover {
+        color: red;
     }
     /* cell number */
     .section-02 .carousel-cell:before {
@@ -385,7 +359,6 @@ footer .footer-social-icons a i {
         width: 20%;
         height: 120px;
         margin-right: 10px;
-        background: rgb(243, 243, 243);
         border-radius: 5px;
     }
     /* cell number */
@@ -421,7 +394,6 @@ footer .footer-social-icons a i {
         width: 50%;
         height: 120px;
         margin-right: 10px;
-        background: rgb(243, 243, 243);
         border-radius: 5px;
     }
     /* cell number */
@@ -472,7 +444,6 @@ footer .footer-social-icons a i {
         width: 50%;
         height: 120px;
         margin-right: 10px;
-        background: rgb(243, 243, 243);
         border-radius: 5px;
     }
     /* cell number */
