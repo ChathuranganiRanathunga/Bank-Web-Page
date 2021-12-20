@@ -366,10 +366,13 @@ footer .footer-social-icons a i {
         margin-right: 10px;
         border-radius: 5px;
     }
-    .section-02 .carousel-cell i:hover,
+    .section-02 .carousel-cell:hover {
+        color: rgb(230, 20, 20);
+    }
+    /* .section-02 .carousel-cell i:hover,
     .section-02 .carousel-cell h6:hover {
         color: red;
-    }
+    } */
     /* cell number */
     .section-02 .carousel-cell:before {
         display: block;
