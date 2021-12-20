@@ -305,7 +305,7 @@ footer .footer-social-icons a i {
 
 @media only screen and (min-width: 768px) {
     .section-01 .main-section {
-        background-image: url(./Images/Main_Image.svg);
+        background-image: url(./Images/sec01_main.svg);
         height: 570px;
         background-size: cover;
         background-repeat: no-repeat;
